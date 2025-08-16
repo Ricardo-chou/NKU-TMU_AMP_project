@@ -13,9 +13,9 @@ def get_optimized_params():
     """返回优化后的推荐参数"""
     return {
         # 基本参数
-        "pt_path": "/root/NKU-TMU_AMP_project/checkpoints/finetune/finetune_ema_best.pt",
+        "pt_path": "/root/autodl-tmp/data/generated_embeddings2.pt",
         "model_dir": "/root/autodl-tmp/prot_t5_xl_uniref50",
-        "out_prefix": "decoded_optimized",
+        "out_prefix": "decoded_optimized2",
         "batch_size": 32,
         "device": "cuda",
         

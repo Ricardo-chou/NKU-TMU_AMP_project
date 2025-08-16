@@ -1,0 +1,51 @@
+候选序列筛选统计报告
+==============================
+
+筛选规则:
+1. 去除重复序列
+2. 去除已知序列
+3. 连续重复 ≤ 10
+4. 净电荷 > 0
+5. K+R占比 ≤ 40%
+
+筛选结果:
+original: 100,000
+duplicates_removed: 25
+existing_removed: 0
+excessive_repeats_removed: 0
+negative_charge_removed: 87,899
+high_kr_removed: 0
+final: 12,076
+
+序列长度统计:
+count    12076.000000
+mean        17.747847
+std         10.545939
+min          5.000000
+25%          9.000000
+50%         15.000000
+75%         25.000000
+max         48.000000
+Name: sequence_length, dtype: float64
+
+净电荷统计:
+count    12076.000000
+mean         1.059348
+std          0.681804
+min          0.000388
+25%          0.760904
+50%          0.839288
+75%          0.916126
+max          8.995343
+Name: net_charge, dtype: float64
+
+K+R占比统计:
+count    12076.000000
+mean         0.181503
+std          0.058471
+min          0.071429
+25%          0.142857
+50%          0.166667
+75%          0.200000
+max          0.400000
+Name: kr_ratio, dtype: float64

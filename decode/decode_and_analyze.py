@@ -474,7 +474,7 @@ def main():
         # 验证数据
         embeds, masks = validate_inputs(embeds, masks, lengths)
         N = embeds.shape[0]
-        print(f"加载了 {N} 个样本，embedding形状: {embeds.shape}")
+        print(f"加载了 {N} 个样本，embedding形状: {embeds.shape},文件名为{args.pt_path},导出地址为{args.out_prefix}")
         
         # 2. 加载模型
         print(f"加载ProtT5模型...")
